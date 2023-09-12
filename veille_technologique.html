@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+       
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'rubik', sans-serif;   
+} 
+head{
+    background-color: rgb(13, 9, 19); 
+
+}
+body{
+    background-image: url('fondecran.png');
+    background-size: cover;
+    box-shadow:  5px 10px 10px 1px rgb(32, 33, 36);    
+} 
+body::before {
+    content: "";
+    position: absolute;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 3, 19, 0.7);    
+}
+.header{
+    position: relative;
+    display: flex;
+    margin-top: 0%;
+    width: 100%;
+    height: 55px;
+    justify-content: space-around;
+   
+}
+.parent-link{
+    font-size: 180%;
+    margin-top: -4.5%;
+    margin-left: 700px;
+    font-weight: 600; 
+    
+}
+.social-link{
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #00aaff;
+    padding: 20px; ;
+    margin: 0%;
+    font-weight: 500;
+}
+.social-link::after{
+    position: absolute;
+    content:"";
+    width: 90%;
+    height: 1px;
+    top: 80%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: #aa006a;  
+}
+.social-link:hover{
+    color: #aa006a;
+}
+.social-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.parent-link, .icon{
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes typing{
+    from{width: 0ch;}
+    to {width: 10ch;}
+}
+
+@font-face {
+    font-family: 'Imperial Script';
+    src: url('./font-family/ImperialScript-Regular.ttf');
+}
+#signature{
+    font-family: 'Imperial Script', sans-serif;
+    font-size: 320%;  
+    margin-left: 10px;
+    color: #00aaff;
+    width: 10ch;
+    overflow: hidden;
+    animation: typing 3s steps(15)
+    infinite alternate-reverse;
+}
+.veille{
+    font-size: 30px;
+    color:#aa006a;
+    position:absolute ;
+    top: -75%;
+    display: flex;
+    backdrop-filter: blur(20px);
+    width: 50%;
+    height: 65%;
+    margin-left: 50%;
+    padding: 20px;
+    text-align: justify;
+    margin: 720px;
+    flex-direction: column;
+    gap: 17px;
+}
+.besoin{
+    font-size: 25px;
+    color: white;
+}
+.objectif{
+    font-size: 20px;
+    color: white;
+}
+.sujet{
+    margin-left: 150px;
+    font-size: 40px;
+}
+#veilletech{
+    position: absolute;
+    display: inline-block;
+    margin-top: 600px; /* Ajoute un espace entre le paragraphe et le bouton */
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none;/* Supprime le soulignement par défaut des liens */
+    margin-left: 995px;
+}
+footer{
+    position: absolute;
+    margin-top: 680px;
+    margin-left: 500px;
+    text-align: center;
+    color: #aa006a;
+}
+        </style>
+<title></title>
+</head>
+    <body>
+        <header class="header">
+       <nav class="container">
+        <div class="logo-box">
+        </div>
+        <p id="signature">Desmornes</p>
+        <div class="parent-link">
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/index.html" class="social-link">Accueil</a>
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/about.html" class="social-link">A propos</a>
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/projects.html" class="social-link">Projets</a>
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/veille_technologique.html" class="social-link">veille technologique</a>
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/contact.html" class="social-link">Contact</a>
+        </div>
+       </nav>
+       </header>
+       <div class="veille">
+        <div class="sujet"><h5>SUJET: MACHINE LEARNING</h5></div>
+        
+       <div class="besoin">Besoin identifié : L'objectif de ma veille technologique est d'identifier et de suivre les dernières
+         avancées en matière d'éthique et de responsabilité dans le domaine du Machine Learning.</div>
+
+          <div class="objectif"><p>Objectif: Mon objectif principal est de rester informé des développements,
+             des directives et des meilleures pratiques en matière d'éthique et de 
+             responsabilité dans le Machine Learning. Cela comprend la surveillance 
+             des nouvelles réglementations, des normes émergentes, des recherches 
+             académiques et des études de cas pertinents liés à ce dernier.
+              Le but ultime est de s'assurer que l'utilisation de ces technologies
+              reste transparente et conforme aux réglementations, tout en minimisant
+               les biais, en garantissant la confidentialité des données et en favorisant une 
+               utilisation responsable au. Elle aidera aussi à anticiper les changements 
+               nécessaires dans les pratiques de développement et
+                 d'utilisation des modèles de Machine Learning pour répondre aux préoccupations
+                  éthiques croissantes dans ce domaine en constante évolution.</p></div>
+        </div>
+        <div>
+            <a href="./veille technologique.pdf" id="veilletech">Télécharger ma veille</a>
+        </div>
+
+       <footer>
+        <p>&copy; 2023 Nephtalie Desmornes || Tous droits réservés</p>
+        <p>Créé par Nephtalie Desmornes</p>
+       </footer>
+    </body>
+</html>
