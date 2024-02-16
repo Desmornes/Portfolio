@@ -1,9 +1,12 @@
+@media screen and (min-width: 1000px) {
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
     font-family: 'rubik', sans-serif;   
 } 
+
+    
 head{
     background-color: rgb(13, 9, 19); 
 
@@ -129,21 +132,7 @@ body::before {
     color: #00aaff;
     display: flex;  
 }
+}
+    
 
-     /*mobile mode*/
-     @media(max-width: 767px){
-        .row{
-            grid-template-columns:1fr;  
-                
-        }
-       }
-       /*tablet mode*/
-    @media(min-width: 768px) and (max-width: 991px) {
-        .row {
-            grid-template-columns: repeat(2, 1fr);
-            padding-bottom:0px;
-            gap: 2%;       
-        }
-             
-    }
     
